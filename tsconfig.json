@@ -9,7 +9,7 @@
     // See also https://aka.ms/tsconfig/module
     "target": "esnext",
     "module": "nodenext",
-    "types": ["node"],
+    "types": ["node", "jest"],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -40,5 +40,6 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true
-  }
+  },
+  "exclude": ["node_modules", "dist", "jest.config.ts", "src/**/*.test.ts"]
 }

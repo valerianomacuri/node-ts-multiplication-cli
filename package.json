@@ -7,7 +7,7 @@
     "dev:nodemon": "nodemon",
     "build": "rimraf ./dist && tsc",
     "start": "npm run build && node dist/app.js",
-    "test": "jest",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },

@@ -29,6 +29,6 @@ export class ServerApp {
     wasCreated
       ? console.log("File created!")
       : console.log("File not created!");
-    console.log("Serveer runnung...");
+    console.log("Server running...");
   }
 }
